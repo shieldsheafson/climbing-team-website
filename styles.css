@@ -9,6 +9,8 @@ html, body {
   align-items: center;
   background-color: #FF5F05; 
   box-shadow: 1px 1px 5px 2px;
+  position: sticky;
+  top: 0;
 }
 
 .menu-site-link {
@@ -65,9 +67,30 @@ html, body {
   height: 5.5rem;
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-image: url("images/Screenshot\ 2025-08-04\ at\ 12.13.56\ PM.png");
+  background-size: cover;
+  height: 50rem;
+  background-position: center bottom;
+}
+
+h1 {
+  color: white;
+}
+
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* horizontal centering */
-  align-items: center;     /* vertical centering */
+  justify-content: center;
+  align-items: center;
+  background-color: #13294B;
+}
+
+footer * {
+  color: #FF5F05;
 }
