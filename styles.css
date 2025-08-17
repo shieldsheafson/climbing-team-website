@@ -1,3 +1,11 @@
+:root {
+  --illini-orange: #FF5F05;
+  --illini-blue: #13294B;
+  --illini-storm1: #707372;
+  --illini-storm2: #C8C6C7;
+  --box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .8);
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -7,10 +15,11 @@ html, body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: #FF5F05; 
-  box-shadow: 1px 1px 5px 2px;
+  background-color: var(--illini-orange); 
+  box-shadow: var(--box-shadow);
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 .menu-site-link {
@@ -31,13 +40,13 @@ html, body {
 
 .site-title {
   font-size: 2rem;
-  color: #13294B;
+  color: var(--illini-blue);
   font-weight: bold;
   margin: 0;
 }
 .site-subtitle {
   font-size: 1rem;
-  color: #13294B;
+  color: var(--illini-blue);
   /* font-weight: bold; */
   margin: 0;
   text-align: center;
@@ -53,7 +62,7 @@ html, body {
 
 .menu-link {
   font-size: 1.5rem;
-  color: #13294B;
+  color: var(--illini-blue);
   text-decoration: none;
   font-weight: bold;
 }
@@ -70,17 +79,28 @@ html, body {
 .hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 0;
-  background-image: url("images/Screenshot\ 2025-08-04\ at\ 12.13.56\ PM.png");
+  background-image: url("images/teampicture.jpg");
   background-size: cover;
   height: 50rem;
-  background-position: center bottom;
+  background-position: center 100%;
+  box-shadow: var(--box-shadow);
+  position: relative;
 }
 
 h1 {
   color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.story {
+  display: flex;
+  background-color: #707372;
+  padding: 0;
 }
 
 footer {
@@ -88,9 +108,32 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #13294B;
+  background-color: var(--illini-blue);
 }
 
 footer * {
-  color: #FF5F05;
+  color: var(--illini-orange);
+}
+
+section {
+  display: flex;
+  padding: 0;
+  box-shadow: var(--box-shadow);
+  position: relative;
+}
+
+.story-section {
+  background-color: #707372;
+  z-index: 5;
+}
+
+.officers-section {
+  background-color: #C8C6C7;
+  z-index: 4;
+}
+
+.roster {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
